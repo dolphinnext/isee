@@ -8,5 +8,5 @@ new.pkg <- pkg[!(pkg %in% installed.packages()[, 'Package'])]
 packages <- c("BiocManager")
 inst_pack(packages)
 
-BiocManager::install(c("iSEE","scRNAseq"))
+BiocManager::install(c("iSEE","scRNAseq", "scater", "debrowser"))
 
