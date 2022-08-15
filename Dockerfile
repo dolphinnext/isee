@@ -14,7 +14,9 @@ RUN mkdir -p /project /nl /mnt /share
 RUN apt-get update
 RUN apt-get install -y --reinstall build-essential
 
-
 # R Packages Installation
 COPY install_packages.R /
 RUN Rscript /install_packages.R
+COPY run.R /
+COPY runDEBrowser.R /
+COPY runHello.R /
